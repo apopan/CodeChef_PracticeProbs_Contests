@@ -93,3 +93,17 @@ if __name__ == '__main__':
     
     matrix = [[i, j, k] for i in range(x + 1) for j in range(y + 1) for k in range(z + 1) if i+j+k != n]
     print(matrix)
+
+
+    
+# Find runner up score 
+    # Method 1 : Finding ascending order of array and getting the second last element
+    
+ if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    arr2 = list(set(arr))
+    arr2.sort()
+    print(arr2[-2])
+    
+    # Method 2 : 
