@@ -105,4 +105,11 @@ if __name__ == '__main__':
     arr2.sort()
     print(arr2[-2])
     
-    # Method 2 : 
+    # Method 2 : Finding and delesting the largest element in the list and printing largest number in new list, which will actually be second largest for the old list
+    
+    if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    arr2 = set(arr)
+    arr2.remove(max(arr2))
+    print(max(arr2))
