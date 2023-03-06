@@ -113,3 +113,26 @@ if __name__ == '__main__':
     arr2 = set(arr)
     arr2.remove(max(arr2))
     print(max(arr2))
+    
+    
+# Nested List
+
+student_grades = []
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        student_grades.append([name, score])
+        
+graded_list = sorted(list(set([student[1] for student in student_grades])))
+
+second_lowest_grade = graded_list[1]
+
+students_with_second_lowest_grade = [student for student in student_grades
+if student[1]==second_lowest_grade
+]
+
+students_with_second_lowest_grade.sort()
+
+for student in students_with_second_lowest_grade:
+    print(student[0])
