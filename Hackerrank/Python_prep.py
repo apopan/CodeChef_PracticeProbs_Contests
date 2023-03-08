@@ -136,3 +136,15 @@ students_with_second_lowest_grade.sort()
 
 for student in students_with_second_lowest_grade:
     print(student[0])
+
+    
+# Finding the percentage
+
+if __name__ == '__main__':
+    n = int(input())
+    x = [input().split() for i in range(n)]
+    c = input()
+    d = {}
+    for i in range(n):
+        d[x[i][0]] = list(map(float,x[i][1:]))
+    print(f'{sum(d[c])/len(d[c]):.2f}')     
