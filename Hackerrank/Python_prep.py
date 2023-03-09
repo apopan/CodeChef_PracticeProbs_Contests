@@ -148,3 +148,5 @@ if __name__ == '__main__':
     for i in range(n):
         d[x[i][0]] = list(map(float,x[i][1:]))
     print(f'{sum(d[c])/len(d[c]):.2f}')     
+
+    
